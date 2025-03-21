@@ -56,13 +56,20 @@ table {
 }
 header {
     border: 1px solid green;
-	display: flex;
+    display: flex;
     flex-direction: row;
-	align-content: space-around;
-	gap: 30px;
-	column-gap: 35%;
-} 
+    align-content: space-around;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+button {
+    padding: 8px 16px;
+    background: transparent;
+    border: 2px solid #000;
+    max-width: 150px;
+}
 nav ul {
     list-style: none; 
     display: flex; 
@@ -73,7 +80,6 @@ nav ul {
 
 .picture-box {
     width: 1450px;
-    height: 300px;
     border: 2px solid black; 
     margin: 20px auto; 
 	border-radius: 20px;
@@ -81,18 +87,21 @@ nav ul {
 
 .picture-box img {
     max-width: 1450px;
-    height: 300px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .intro-section {
-	display: grid;
-    row-gap: 20px; 
-	background-color: white;
+	row-gap: 20px;
+    background-color: white;
     padding: 30px;
     width: 50%;
     margin: auto;
-	text-align: center;
-
+    text-align: center;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
